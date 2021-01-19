@@ -124,6 +124,15 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to QuestionForExpert.
+        /// </summary>
+        public static string AskAnExpertSubmitText {
+            get {
+                return ResourceManager.GetString("AskAnExpertSubmitText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ...If my answer isn&apos;t satisfactory... I&apos;ll connect you to an expert..
         /// </summary>
         public static string AskAnExpertText2 {
@@ -808,6 +817,15 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ShareFeedback.
+        /// </summary>
+        public static string ShareFeedbackSubmitText {
+            get {
+                return ResourceManager.GetString("ShareFeedbackSubmitText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Share app feedback.
         /// </summary>
         public static string ShareFeedbackTitleText {
@@ -903,6 +921,15 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Properties {
         public static string StatusFactTitle {
             get {
                 return ResourceManager.GetString("StatusFactTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Submit.
+        /// </summary>
+        public static string SubmitButtonText {
+            get {
+                return ResourceManager.GetString("SubmitButtonText", resourceCulture);
             }
         }
         
