@@ -144,7 +144,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                             {
                                 Type = ActionTypes.MessageBack,
                                 DisplayText = Strings.AskAnExpertDisplayText,
-                                Text = AskAnExpertSubmitText,
+                                Text = Strings.AskAnExpertSubmitText,
                             },
                             UserQuestion = cardPayload?.UserQuestion,
                             KnowledgeBaseAnswer = cardPayload?.KnowledgeBaseAnswer,

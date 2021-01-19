@@ -95,6 +95,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                     {
                         new AdaptiveSubmitAction
                         {
+                            Title = Strings.SubmitButtonText,
                             Data = new ChangeTicketStatusPayload { TicketId = this.Ticket.TicketId },
                         },
                     },

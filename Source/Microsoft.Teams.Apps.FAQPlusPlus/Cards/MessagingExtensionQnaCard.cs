@@ -441,7 +441,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                        MsTeams = new CardAction
                        {
                            Type = ActionTypes.MessageBack,
-                           Text = Constants.DeleteCommand,
+                           Text = Strings.DeleteButtonText,
                        },
                        OriginalQuestion = question,
                        UpdateHistoryData = updateHistoryData,
@@ -457,7 +457,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                       MsTeams = new CardAction
                       {
                           Type = ActionTypes.MessageBack,
-                          Text = Constants.NoCommand,
+                          Text = Strings.No,
                       },
                   },
               });
@@ -991,7 +991,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                            {
                                Type = ActionTypes.MessageBack,
                                DisplayText = Strings.AskAnExpertDisplayText,
-                               Text = Constants.AskAnExpert,
+                               Text = Strings.AskAnExpertDisplayText,
                            },
                            UserQuestion = userQuestion,
                            KnowledgeBaseAnswer = answerModel?.Description,
@@ -1008,7 +1008,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                            {
                                Type = ActionTypes.MessageBack,
                                DisplayText = Strings.ShareFeedbackDisplayText,
-                               Text = Constants.ShareFeedback,
+                               Text = Strings.ShareFeedbackDisplayText,
                            },
                            UserQuestion = userQuestion,
                            KnowledgeBaseAnswer = answerModel?.Description,

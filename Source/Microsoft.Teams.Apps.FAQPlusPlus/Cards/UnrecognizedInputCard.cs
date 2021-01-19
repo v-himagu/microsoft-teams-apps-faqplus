@@ -44,7 +44,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                             {
                                 Type = ActionTypes.MessageBack,
                                 DisplayText = Strings.AskAnExpertDisplayText,
-                                Text = Constants.AskAnExpert,
+                                Text = Strings.AskAnExpertDisplayText,
                             },
                             UserQuestion = userQuestion,
                         },

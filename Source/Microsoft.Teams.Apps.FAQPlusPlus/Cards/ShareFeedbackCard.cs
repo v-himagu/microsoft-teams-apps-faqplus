@@ -164,7 +164,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                             {
                                 Type = ActionTypes.MessageBack,
                                 DisplayText = Strings.ShareFeedbackDisplayText,
-                                Text = ShareFeedbackSubmitText,
+                                Text = Strings.ShareFeedbackSubmitText,
                             },
                             UserQuestion = data.UserQuestion,
                             KnowledgeBaseAnswer = data.KnowledgeBaseAnswer,

@@ -28,7 +28,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
         /// <returns>The response card to append to a message as an attachment.</returns>
         public static Attachment GetCard(QnASearchResult response, string userQuestion, string appBaseUri, ResponseCardPayload payload)
         {
-            AdaptiveCard responseCard = new AdaptiveCard(new AdaptiveSchemaVersion(1, 2))
+            AdaptiveCard responseCard = new AdaptiveCard(new AdaptiveSchemaVersion(1, 0))
             {
                 Body = BuildResponseCardBody(response, userQuestion, response.Answer, appBaseUri, payload),
                 Actions = BuildListOfActions(userQuestion, response.Answer),
@@ -161,7 +161,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                         {
                             Type = ActionTypes.MessageBack,
                             DisplayText = Strings.AskAnExpertDisplayText,
-                            Text = Constants.AskAnExpert,
+                            Text = Strings.AskAnExpertDisplayText,
                         },
                         UserQuestion = userQuestion,
                         KnowledgeBaseAnswer = answer,
@@ -178,7 +178,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                         {
                             Type = ActionTypes.MessageBack,
                             DisplayText = Strings.ShareFeedbackDisplayText,
-                            Text = Constants.ShareFeedback,
+                            Text = Strings.ShareFeedbackDisplayText,
                         },
                         UserQuestion = userQuestion,
                         KnowledgeBaseAnswer = answer,
@@ -206,7 +206,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                 Id = id,
                 Questions = new List<string>()
                 {
-                    userQuestion,
+                        userQuestion,
                 },
                 Answer = answer,
             });

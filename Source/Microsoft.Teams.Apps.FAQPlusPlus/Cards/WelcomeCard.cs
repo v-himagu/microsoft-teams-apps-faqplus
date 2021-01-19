@@ -46,7 +46,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                             {
                               Type = ActionTypes.MessageBack,
                               DisplayText = Strings.TakeATourButtonText,
-                              Text = Constants.TakeATour,
+                              Text = Strings.TakeATourButtonText,
                             },
                         },
                     },
